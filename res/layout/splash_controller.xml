@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+     
+	<FrameLayout
+	    android:id="@+id/framelayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent">
+	    
+	    <com.connected.parking.views.GestureDetectorViewFlipper 
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:id="@+id/viewflipper"> 
+	        
+	        <ImageView
+	            android:id="@+id/imageview1"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:src="#ffff00"
+	            android:clickable="true"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"/>
+	          
+	        <ImageView
+		        android:id="@+id/imageview2"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:src="#ff00ff"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true" />
+	         
+	        <ImageView
+		        android:id="@+id/imageview3"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:src="#ccaa00"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true" />
+	        
+	            
+	        <ImageView
+		        android:id="@+id/imageview4"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:src="#aa00bb"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true" />
+	        
+	        <ImageView
+		        android:id="@+id/imageview5"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:src="#0000ff"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true" />
+	        
+	    </com.connected.parking.views.GestureDetectorViewFlipper >
+	    
+	    <LinearLayout 
+	        android:id="@+id/radio_root"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:layout_marginTop="20dp"
+	        android:layout_gravity="center_horizontal">
+
+	        <include
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            layout="@layout/home_foot_bar" />
+	        
+	    </LinearLayout>
+
+	</FrameLayout>
+	
+	<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent" 
+		    android:orientation="horizontal" 
+		    android:layout_marginTop="-100dp">
+	
+		    <Button
+		        android:id="@+id/login"
+		        android:layout_width="wrap_content"
+		        android:layout_height="45dp"
+		        android:layout_weight="1"
+		        android:textSize="11sp"
+		        android:textColor="#cccccc"
+		        android:layout_marginBottom="5dp"
+		        android:layout_marginLeft="20dp"
+		        android:background="#faf1f1"
+		        android:text="log in" />
+	
+		    <Button
+		        android:id="@+id/signin"
+		        android:layout_width="wrap_content"
+		        android:layout_height="45dp"
+		        android:layout_weight="1"
+		        android:textSize="11sp"
+		        android:textColor="#cccccc"
+		        android:layout_marginBottom="5dp"
+		        android:layout_marginLeft="2dp" 
+		        android:layout_marginRight="20dp"
+		        android:background="#faf1f1"
+		        android:text="sign in" />
+		</LinearLayout>
+	
+
+</LinearLayout>
