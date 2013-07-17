@@ -31,9 +31,9 @@ public class RegisterController extends Activity{
 
 	EditText txtEmail = null;
 	EditText txtPassword = null;
-	EditText txtPasswordc = null;
+	EditText txtUsername = null;
 	Button reg_btn = null;
-	ImageView return_btn = null;
+	Button return_btn = null;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -43,11 +43,12 @@ public class RegisterController extends Activity{
 		setContentView(R.layout.register_controller2);
 		
 		//
+		
 		txtPassword = (EditText) findViewById(R.id.editText3);
-		//txtPasswordc = (EditText) findViewById(R.id.txtPasswordc);
+		txtUsername = (EditText) findViewById(R.id.editText2);
 		txtEmail = (EditText) findViewById(R.id.txtText1);
 		reg_btn = (Button) findViewById(R.id.button1);
-		return_btn = (ImageView) findViewById(R.id.button2);
+		return_btn = (Button) findViewById(R.id.button2);
 	}
 	
 	public void GetBack(View getback){
@@ -114,15 +115,15 @@ public class RegisterController extends Activity{
 			  return;
 		  }
 		   
-		  if(txtPasswordc.getText().length() < 1) {
-			  showAlert("'Confirm Password' is required");
+		  if(txtUsername.getText().length() < 1) {
+			  showAlert("Username is required");
 			  return;
 			  
-		  }else if(!txtPassword.getText().toString().equals(txtPasswordc.getText().toString())) {
+		  }/*else if(!txtPassword.getText().toString().equals(txtPasswordc.getText().toString())) {
 			  
 			  showAlert("Passwords do not match");
 			  return;
-		  }
+		  }*/
 		
 		   DefaultHttpClient client = new DefaultHttpClient();
 	       HttpPost httppost = new HttpPost("http://api.ticketline.co.uk//user");
