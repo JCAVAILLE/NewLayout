@@ -5,9 +5,9 @@
     android:orientation="vertical" >
     
     <com.markupartist.android.widget.ActionBar
-        android:id="@+id/actionbar"/>
-     <!--    style="@style/ActionBar"
-    /> -->
+        android:id="@+id/actionbar"
+        style="@style/ActionBar"
+    />
     
     <com.handmark.pulltorefresh.library.PullToRefreshListView
        android:id="@+id/pull_refresh_webview"

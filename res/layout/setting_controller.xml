@@ -156,9 +156,11 @@
 		                android:layout_height="45dp"
 		                android:layout_weight="1" > 
 		                <CheckBox 
+		                    android:id="@+id/login_with_twitter"
 			                android:layout_width="wrap_content"
 			                android:layout_height="wrap_content"
 			                android:layout_gravity="center"
+			                android:onClick="onToggleClicked"
 			                style="@style/MyCheckBox"
 		                /> 
 		            </LinearLayout>
@@ -213,9 +215,11 @@
 		                android:layout_height="45dp"
 		                android:layout_weight="1">
 		                <CheckBox 
+		                    android:id="@+id/login_with_facebook"
 			                android:layout_width="wrap_content"
 			                android:layout_height="wrap_content"
 			                android:layout_gravity="center"
+			                android:onClick="onToggleClicked"
 			                style="@style/MyCheckBox"
 		                />
 		            </LinearLayout>
@@ -246,9 +250,11 @@
 		                android:layout_height="45dp"
 		                android:layout_weight="1">
 		                <CheckBox 
+		                    android:id="@+id/public_on_timeline"
 			                android:layout_width="wrap_content"
 			                android:layout_height="wrap_content"
 			                android:layout_gravity="center"
+			                android:onClick="onToggleClicked"
 			                android:checked="false"
 			                style="@style/MyCheckBox"/>
 		            </LinearLayout>
@@ -295,16 +301,18 @@
 		                android:paddingTop="14dp" 
                 		android:paddingLeft="20dp"
 		                android:layout_weight="15"
-		                android:text="Country"
+		                android:text="Mobile Notification"
 		                android:textColor="#3d3d3d"/>
 		            <LinearLayout 
 		                android:layout_width="wrap_content"
 		                android:layout_height="45dp"
 		                android:layout_weight="1">
 		                <CheckBox 
+		                    android:id="@+id/mobile_notification"
 			                android:layout_width="wrap_content"
 			                android:layout_height="wrap_content"
 			                android:layout_gravity="center"
+			                android:onClick="onToggleClicked"
 			                android:checked="false"
 			                style="@style/MyCheckBox"/>
 		            </LinearLayout>
