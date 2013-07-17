@@ -40,14 +40,14 @@ public class RegisterController extends Activity{
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.register_controller);
+		setContentView(R.layout.register_controller2);
 		
 		//
-		txtPassword = (EditText) findViewById(R.id.txtPassword);
-		txtPasswordc = (EditText) findViewById(R.id.txtPasswordc);
-		txtEmail = (EditText) findViewById(R.id.txtEmail);
-		reg_btn = (Button) findViewById(R.id.bregister);
-		return_btn = (ImageView) findViewById(R.id.return_pre);
+		txtPassword = (EditText) findViewById(R.id.editText3);
+		//txtPasswordc = (EditText) findViewById(R.id.txtPasswordc);
+		txtEmail = (EditText) findViewById(R.id.txtText1);
+		reg_btn = (Button) findViewById(R.id.button1);
+		return_btn = (ImageView) findViewById(R.id.button2);
 	}
 	
 	public void GetBack(View getback){
