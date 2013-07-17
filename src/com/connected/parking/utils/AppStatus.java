@@ -34,14 +34,15 @@ public class AppStatus {
 	    return (haveConnectedWifi != null) ? haveConnectedWifi : haveConnectedMobile; 
 	}
 	 
-    public static boolean isOnline() { 
+    public static boolean isOnline(Context context) { 
     	
     	boolean haveConnectedWifi = false; 
 	    boolean haveConnectedMobile = false;
-	    
-	    ConnectivityManager connectivityManager = (ConnectivityManager) Session.getContext().getSystemService(Context.CONNECTIVITY_SERVICE); 
+	    Log.i("online", "start check");
+	    ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE); 
 		NetworkInfo[] netInfo = connectivityManager.getAllNetworkInfo(); 
-	    for (NetworkInfo networkInfo : netInfo) { 
+	    
+		for (NetworkInfo networkInfo : netInfo) { 
 	        if (networkInfo.getTypeName().equalsIgnoreCase("WIFI")) 
 	            if (networkInfo.isAvailable() && networkInfo.isConnected()) 
 	                haveConnectedWifi = true; 
