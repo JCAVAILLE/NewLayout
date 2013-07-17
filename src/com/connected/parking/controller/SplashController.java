@@ -1,6 +1,7 @@
 package com.connected.parking.controller;
 
 import com.connected.parking.R; 
+import com.connected.parking.utils.AppStatus;
 import com.connected.parking.views.GestureDetectorViewFlipper; 
 
 import android.os.Bundle;
@@ -17,6 +18,7 @@ import android.view.View.OnClickListener;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class SplashController extends Activity {
 
@@ -37,6 +39,12 @@ public class SplashController extends Activity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, 
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setContentView(R.layout.splash_controller);
+		
+		boolean online = AppStatus.isOnline(this); 
+		Toast.makeText(SplashController.this, String.valueOf(online), 1000).show();
+		
+		String hasCon = AppStatus.getConnectionType(this);
+		Toast.makeText(SplashController.this, hasCon, 1000).show();
 		
 		viewFlipper = (GestureDetectorViewFlipper)findViewById(R.id.viewflipper);
 	    mGestureDetector = new GestureDetector(new GDListener());
