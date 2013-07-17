@@ -36,7 +36,7 @@
 		        android:layout_height="wrap_content"
 		        android:ems="10"
 		        android:hint="Usename"
-		        android:inputType="textEmailAddress" />
+		        android:inputType="text" />
 
 		    <EditText
 		        android:id="@+id/txtText1"
@@ -45,7 +45,7 @@
 		        android:layout_marginTop="15dp"
 		        android:ems="10"
 		        android:hint="Email"
-		        android:inputType="textPassword" />
+		        android:inputType="textEmailAddress" />
 
 		    <EditText
 		        android:id="@+id/editText3"
