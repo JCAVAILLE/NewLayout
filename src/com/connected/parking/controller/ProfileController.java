@@ -3,8 +3,6 @@ package com.connected.parking.controller;
 import java.io.File;
 
 import com.connected.parking.R;
-import com.connected.parking.utils.Tools;
-import com.connected.parking.views.GestureDetectorViewFlipper; 
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -24,6 +22,9 @@ import android.view.Window;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import com.connected.parking.utils.Tools;
+import com.connected.parking.views.GestureDetectorViewFlipper;
 
 public class ProfileController extends Activity{
 

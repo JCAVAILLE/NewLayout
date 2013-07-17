@@ -1,9 +1,6 @@
 package com.connected.parking.controller;
   
 import com.connected.parking.R;
-import com.markupartist.android.widget.ActionBar;
-import com.markupartist.android.widget.ActionBar.Action;
-import com.markupartist.android.widget.ActionBar.IntentAction; 
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;

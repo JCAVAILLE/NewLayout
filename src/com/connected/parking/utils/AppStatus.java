@@ -1,7 +1,5 @@
 package com.connected.parking.utils;
 
-import com.connected.parking.model.Session;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.pm.ActivityInfo;

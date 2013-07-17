@@ -6,7 +6,6 @@
     
     <com.markupartist.android.widget.ActionBar
         android:id="@+id/actionbar"
-        style="@style/ActionBar"
     />
     
     <com.handmark.pulltorefresh.library.PullToRefreshListView

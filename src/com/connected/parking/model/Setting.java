@@ -14,7 +14,7 @@ public class Setting {
 	}
 	
 	public boolean isLoginWithTwitter(){
-		return this.isLoginWithTwitter;
+		return Setting.isLoginWithTwitter;
 	}
 	
 	public static void setLoginWithFacebook(boolean b){
@@ -22,7 +22,7 @@ public class Setting {
 	}
 	
 	public boolean isLoginWithFacebook(){
-		return this.isLoginWithFacebook;
+		return Setting.isLoginWithFacebook;
 	}
 	
 	public static void setPublicOnTimeline(boolean c){
@@ -30,7 +30,7 @@ public class Setting {
 	}
 	
 	public boolean isPublicOnTimeline(){
-		return this.isPublishOnTime;
+		return Setting.isPublishOnTime;
 	}
 	
 	public static void setMobileNotification(boolean d){
@@ -38,6 +38,6 @@ public class Setting {
 	}
 	
 	public boolean isMobileNotification(){
-		return this.isPublishOnTime;
+		return Setting.isPublishOnTime;
 	}
 }

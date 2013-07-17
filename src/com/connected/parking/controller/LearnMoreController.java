@@ -1,11 +1,10 @@
 package com.connected.parking.controller;
   
 import com.connected.parking.R;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Window;
-import android.widget.ListView; 
+import android.widget.ListView;
 
 public class LearnMoreController extends Activity{
 
